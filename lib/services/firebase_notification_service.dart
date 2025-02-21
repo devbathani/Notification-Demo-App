@@ -61,10 +61,7 @@ class FirebaseNotificationService {
       }
     });
 
-    // Get Token for Testing
-    _messaging.getToken().then((token) {
-      log("FCM Token: $token");
-    });
+   
   }
 
   Future<void> _showNotification(RemoteMessage message) async {
